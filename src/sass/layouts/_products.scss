@@ -255,7 +255,20 @@
   margin-right: 15px;
 }
 
-.products__btn {
+.text-coffee.show-more .text-visually-hidden {
+  display: inline;
+  font-size: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.text-coffee.show-more {
+  font-size: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.products__btn, .bnt-coffee {
   height: 40px;
   width: 40px;
   border-radius: 50%;
