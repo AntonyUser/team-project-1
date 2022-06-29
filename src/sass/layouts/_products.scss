@@ -21,8 +21,7 @@
   position: relative;
 
   border-radius: 24px;
-  padding-top: 160px;
-  padding-bottom: 40px;
+  padding: 160px 39px 40px 41px;
 
   &:first-child {
     background-color: var(--pr-bg-color);
@@ -51,13 +50,13 @@
     margin-right: 16px;
     flex-basis: calc((100% - 32px) / 3);
     padding-top: 118px;
+    padding: 118px 32px 40px 32px;
   }
 
   @include mq(desktop) {
     margin-right: 32px;
     flex-basis: calc((100% - 64px) / 3);
-    padding-top: 165px;
-    padding-bottom: 60px;
+    padding: 165px 63px 60px 64px;
   }
 
   &::before {
@@ -186,6 +185,7 @@
 
   font-size: 20px;
   line-height: 1.15;
+  margin-bottom: 32px;
 
   @include mq(desktop) {
     font-size: 30px;
@@ -198,7 +198,7 @@
     width: 26px;
     height: 6px;
 
-    margin: 32px auto;
+    margin: 32px auto 0;
 
     background-image: url(/src/icons/group.svg);
   }
@@ -217,21 +217,15 @@
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 32px;
-  margin-left: 41px;
-  margin-right: 39px;
 
   @include mq(tablet) {
     line-height: 1.8;
-    margin-left: 32px;
-    margin-right: 32px;
   }
 
   @include mq(desktop) {
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 70px;
-    margin-left: 64px;
-    margin-right: 63px;
   }
 }
 
@@ -241,31 +235,26 @@
   }
 }
 
-.text-cream.show-more .text-dop-cream {
-  display: inline;
-  font-size: 21px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.text-coffee.show-more .text-dop-coffee {
-  display: inline;
-  font-size: 21px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
+.text-cream.show-more .text-dop-cream, 
+.text-coffee.show-more .text-dop-coffee,
 .text-milkshakes.show-more .text-dop-milkshakes {
-  display: inline;
-  font-size: 21px;
-  margin-left: 15px;
-  margin-right: 15px;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+
+  @include mq(desktop) {
+     font-size: 18px;
+  }
 }
 
 .text-cream.show-more, .text-coffee.show-more, .text-milkshakes.show-more {
-  font-size: 21px;
-  margin-left: 15px;
-  margin-right: 15px;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+
+  @include mq(desktop) {
+     font-size: 18px;
+  }
 }
 
 .btn-cream, .btn-coffee, .btn-milkshakes {
