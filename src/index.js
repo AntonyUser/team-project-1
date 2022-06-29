@@ -15,3 +15,6 @@ import './js/read-more';
 
 
 
+import './js/slider';
+
+import './js/btn-to-top';
