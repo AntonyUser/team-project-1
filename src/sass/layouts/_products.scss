@@ -34,7 +34,7 @@
   &:last-child {
     background-color: #c2e297;
 
-    @include mq(tablet) {
+      @include mq(tablet) {
       margin-right: 0;
     }
   }
@@ -95,14 +95,14 @@
   &::before {
     background-image: url(/src/images/ice_cream-sm.png);
 
-    @include mq(retina) {
+          @include mq(retina) {
       background-image: url(/src/images/ice_cream-sm@2x.png);
     }
 
     @include mq(tablet) {
       background-image: url(/src/images/ice_cream-md.png);
 
-      @include mq(retina) {
+          @include mq(retina) {
         background-image: url(/src/images/ice_cream-md@2x.png);
       }
     }
@@ -110,7 +110,7 @@
     @include mq(desktop) {
       background-image: url('/src/images/ice_cream-ld.png');
 
-      @include mq(retina) {
+            @include mq(retina) {
         background-image: url('/src/images/ice_cream-ld@2x.png');
       }
     }
