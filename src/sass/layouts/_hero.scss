@@ -19,7 +19,7 @@
 .hero__ellipse {
   position: absolute;
   top: 83px;
-  left: 36px;
+  left: 76px;
   bottom: 0;
   width: 345px;
   height: 345px;
@@ -44,7 +44,7 @@
 .hero__image-icecream {
   position: absolute;
   bottom: 0;
-  right: 12px;
+  right: 112px;
 
   animation: appearance 1.5s cubic-bezier(0.4, 0, 0.2, 1);
   @include transition(transform);
@@ -106,7 +106,7 @@
 .hero__title-wrapper {
   position: absolute;
   z-index: 1;
-  left: 20px;
+  left: 60px;
   top: 50%;
 
   @include mq(mobile-only) {
@@ -231,7 +231,8 @@
   @include mq(desktop) {
     font-size: 46px;
   }
-  animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
+
+  // animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
 }
 
 .hero__ellipse--sm {
